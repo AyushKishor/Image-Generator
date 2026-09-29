@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ask-the-compete
+    runtime: python
+    rootDir: Ask_the_Compete_Agent
+    plan: free
+    buildCommand: "true"
+    startCommand: python server.py
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
